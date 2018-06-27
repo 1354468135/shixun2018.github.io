@@ -181,7 +181,7 @@ h2:hover {
 
 /*媒体查询 700px */
 
-@media(min-width:700px) {
+@media(min-width:1080px) {
     .main-header {
         display: flex;
         justify-content: space-around;
