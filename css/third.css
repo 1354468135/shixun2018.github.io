@@ -1,0 +1,270 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+    text-decoration: none;
+    /*去掉下划线*/
+    list-style: none;
+    /*去掉小圆点*/
+    box-sizing: border-box;
+    /*活泼性（边缘活泼）*/
+}
+
+
+/* ================================= 
+移动优先CSS规则
+==================================== */
+
+/*inline 线级元素   一定区域*/
+
+/*block 块级元素  100%*/
+
+.logo {
+    margin: 0;
+    /*外边距*/
+}
+
+header {
+    text-align: center;
+    /*文本对齐：居中*/
+    background-color:darkcyan;
+
+}
+
+a {
+    display: block;
+    /*显示方式*/
+    color: white;
+}
+
+/* 
+ .logo a {
+    padding: 1em 0;
+    内边距 上下1em 左右0
+} 
+ */
+
+.navlist {
+    display: none;
+}
+
+.navlist li a {
+    padding: .5em 0;
+    /*内边距 上下0.5em 左右0*/
+}
+
+.navlist li a:hover {
+    background-color: deeppink;
+    transition: 0.2s;
+    color: aqua;
+}
+.newNavList {
+    display: none;
+}
+
+.newNavList li a {
+    padding: .5em 0;
+    /*内边距 上下0.5em 左右0*/
+}
+
+.newNavList li a:hover {
+    background-color: deeppink;
+    transition: 0.2s;
+    color: aqua;
+}
+
+/*伪class  pseudo class:当鼠标移动到元素上*/
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: coral;
+    color: white;
+}
+
+.wrap {
+    min-height: calc(100vh - 52.8px);
+}
+
+.banner {
+    background: url('../images/54549.jpg');
+    /*背景*/
+    background-size: cover;
+    /*背景适应*/
+    background-position: center center;
+    /*图片以什么位置为主*/
+    text-align: center;
+    /*文字位置*/
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    /*文字阴影*/
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /*弹性方向   colum：列*/
+    justify-content: center;
+}
+
+.banner h1,
+h2 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.banner h2 {
+    padding-top: .5em;
+}
+
+.banner h1:hover,
+h2:hover {
+    color: cornflowerblue;
+    transition: 0.2s;
+}
+
+.container {
+    /*border: 1px solid pink;*/
+    margin: auto;
+    /*居中*/
+    width: 90%;
+}
+
+.col {
+    padding: 1em 1em;
+    background-color: #167fb0;
+    color: white;
+    font-family: '幼圆'；
+}
+
+.col h1 {
+    text-align: center;
+}
+
+.col p {
+    line-height: 1.4;
+    /*行间距*/
+    text-align: center;
+}
+
+.HTML {
+    background-color: #2F2F2F;
+}
+
+.CSS {
+    background-color: darkblue;
+}
+
+.JAVASCRIPT {
+    background-color: blueviolet;
+}
+
+.headLogo {
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.foldButton {
+
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+.armyVideo{
+    text-align: center;
+    background: url(../images/fgfgfg2f24744c01b.jpg);
+    background-size: cover;
+}
+.video2{
+    margin: 0;
+    height: 204px;
+    width: 300px;
+}
+
+
+
+/*  nav .foldButton{
+       display: none;
+    }
+   */
+
+/*媒体查询 700px */
+
+@media(min-width:700px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        /*导航条左右位置*/
+        align-items: center;
+        /*导航条上下位置*/
+    }
+    .navlist {
+        display: flex;
+        
+    }
+    .navlist li a {
+        padding: 1em 2em;
+        border-radius: 50px;
+        /*边框圆角*/
+        display: block;
+    }
+    .banner {
+        height: 750px;
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        /*flex-wrap: wrap;  强制宽度*/
+        padding: 1em 0;
+
+    }
+    .col {
+        flex-grow: 1;
+        /*设定弹性子集相对于其他的子集的比例  弹性增长*/
+        flex-basis: 25%;
+        /*弹性基础 初始大小 强制限制 针对子集*/
+        margin: 0 2em;
+        border-radius: 10px;
+
+    }
+    .col:hover {
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+        transition: 0.3s;
+        cursor: default;
+    }
+    .col p {
+        text-align: justify;
+    }
+    .headLogo {
+        height: 50px;
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        background: none;
+        
+    }
+    .foldButton {
+        display: none;
+    }
+    .navlist li a {
+        display: none;
+    }
+    .newNavList{
+        display: flex;  
+    }
+    .newNavList li a{
+        padding: 1em 2em;
+        border-radius: 50px;
+        /*边框圆角*/
+        display: block;
+        color: darkblue;
+    }
+    .video2{
+        height: 480px;
+        width: 700px;
+    }
+
+
+
+}
