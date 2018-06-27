@@ -170,15 +170,17 @@ h2:hover {
     height: 30px;
     margin: 0 auto;
 }
-.armyVideo{
+.armyVideo {
+    height:800px;
     text-align: center;
     background: url(../images/fgfgfg2f24744c01b.jpg);
     background-size: cover;
 }
-.video2{
-    margin: 0;
-    height: 204px;
-    width: 300px;
+
+.video2 {
+    
+    height: 768px;
+    width: 1024px;
 }
 
 
@@ -260,7 +262,13 @@ h2:hover {
         display: block;
         color: darkblue;
     }
-    .video2{
+    .armyVideo {
+        height: 450px;
+        text-align: center;
+        background: url(../images/fgfgfg2f24744c01b.jpg);
+        background-size: cover;
+    }
+    .video2 {
         height: 450px;
         width: 800px;
     }
